@@ -12,12 +12,12 @@ def index():
 
 @app.get("/ls")
 def ls():
-    return {"files": os.listdir()}
+    return {"files": listdir()}
 
 @app.get("/create")
 def create():
     now = datetime.now()
-    dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+    dt_string = now.strftime("%d_%m_%Y_%H_%M_%S")
 
     with open(f"{dt_string}.txt", "w") as f:
         f.write("Hello")

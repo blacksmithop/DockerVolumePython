@@ -2,7 +2,7 @@
 
 ## 1. docker volume create static-files
 
-> @blacksmithop ➜ /workspaces/DockerVolumePython (main) $ docker volume inspect static-files aa
+> @blacksmithop ➜ /workspaces/DockerVolumePython (main) $ docker volume inspect static-files
 
 ```json
 [
